@@ -269,6 +269,16 @@ nav a:hover {
   height: auto;
 }
 
+@media (max-width: 575px) {
+  .gallery-text {
+    font-size: 1rem;
+    text-align: center;
+    padding: 250px 50px 50px 50px;
+    text-shadow: 0.5px 0.5px 1px black;
+    line-height: 1.5;
+  }
+}
+
 @media (min-width: 576px) {
   .drink {
     width: 50%;
