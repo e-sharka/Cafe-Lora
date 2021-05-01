@@ -1,6 +1,6 @@
 import './style.css';
 import { Layer } from './Layer/index.js';
-import './Layer/style.css'
+import './Layer/style.css';
 
 const navigationBtn = document.querySelector('.nav-btn');
 const navigationElm = document.querySelector('nav');
@@ -31,6 +31,25 @@ orderBtn.addEventListener('click', () => {
 });
 
 const drink = document.querySelector('.drink__info');
-drink.innerHTML += Layer({ color: '#feeeca', label: 'mléčná pěna' });
+/*drink.innerHTML += Layer({ color: '#feeeca', label: 'mléčná pěna' });
 drink.innerHTML += Layer({ color: '#fed7b0', label: 'teplé mléko' });
-drink.innerHTML += Layer({ color: '#613916', label: 'espresso' });
+drink.innerHTML += Layer({ color: '#613916', label: 'espresso' });*/
+
+const layers = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+
+for (let i = 0; i < layers.length; i += 1) {
+  drink.innerHTML += Layer(layers[i]);
+}
