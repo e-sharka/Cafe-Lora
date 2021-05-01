@@ -50,6 +50,8 @@ header {
   height: 5rem;
 
   background-color: #301a1a;
+  position: fixed;
+  width: 100%;
 }
 
 .topbar {
@@ -188,7 +190,7 @@ nav a:hover {
   font-size: 2rem;
   text-align: center;
   padding: 250px 100px 50px 100px;
-  text-shadow: 0.5px 0.5px 1px black;
+  text-shadow: 1px 1px 1px black;
   line-height: 1.5;
 }
 
