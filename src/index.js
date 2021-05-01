@@ -67,7 +67,7 @@ const romano = {
   ],
 };
 
-document.querySelector('.drinks-list').appendChild(Drink(romano));*/
+document.querySelector('.drinks-list').appendChild(Drink(romano));
 
 const drinks = [
   {
@@ -104,8 +104,12 @@ const drinks = [
       },
     ],
   },
-];
+];*/
 
-for (let i = 0; i < drinks.length; i += 1) {
-  document.querySelector('.drinks-list').appendChild(Drink(drinks[i]));
-}
+fetch('https://apps.kodim.cz/daweb/cafelora/api/drinks')
+  .then((response) => response.json())
+  .then((drinks) => {
+    for (let i = 0; i < drinks.length; i += 1) {
+      document.querySelector('.drinks-list').appendChild(Drink(drinks[i]));
+    }
+  });

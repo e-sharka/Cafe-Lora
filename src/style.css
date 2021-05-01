@@ -148,8 +148,6 @@ nav a:hover {
   margin-bottom: 4rem;
 }
 
-
-
 .order-btn {
   padding: 0.5rem 1rem;
 
@@ -174,8 +172,6 @@ nav a:hover {
 .order-btn:active {
   background-color: #e67e51;
 }
-
-
 
 .gallery {
   padding-top: 0;
@@ -221,11 +217,11 @@ nav a:hover {
   }
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .drink {
     width: 50%;
   }
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .container {
@@ -270,7 +266,7 @@ nav a:hover {
     text-align: center;
   }
 
-  .drink {
+  /* .drink {
     width: 33.333%;
-  }
+  } */
 }

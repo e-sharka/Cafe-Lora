@@ -28,15 +28,17 @@ export const Drink = ({ id, name, ordered, layers }) => {
 
   orderBtn.addEventListener('click', () => {
     if (!ordered) {
-      orderBtn.textContent = 'Objednat';
+      orderBtn.textContent = 'Zrušit';
       cup.classList.add('drink__cup--selected');
       ordered = true;
     } else {
-      orderBtn.textContent = 'Zrušit';
+      orderBtn.textContent = 'Objednat';
       cup.classList.remove('drink__cup--selected');
       ordered = false;
     }
   });
+
+  
 
   return drinkElm;
 };
