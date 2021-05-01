@@ -278,6 +278,10 @@ nav a:hover {
     background-position: top left;
   }
 
+  .nav-btn {
+    display: none;
+  }
+
   .navigation {
     flex-direction: row;
   }
