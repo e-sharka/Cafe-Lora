@@ -1,6 +1,5 @@
 import './style.css';
-import { Layer } from './Layer/index.js';
-import './Layer/style.css';
+import { Drink } from './Drink/index.js';
 
 const navigationBtn = document.querySelector('.nav-btn');
 const navigationElm = document.querySelector('nav');
@@ -14,7 +13,7 @@ document.querySelectorAll('.nav-link').forEach((item) => {
   });
 });
 
-const orderBtn = document.querySelector('.order-btn');
+/*const orderBtn = document.querySelector('.order-btn');
 const cup = document.querySelector('.drink__cup');
 let ordered = false;
 
@@ -28,12 +27,12 @@ orderBtn.addEventListener('click', () => {
     cup.classList.add('drink__cup--selected');
     ordered = true;
   }
-});
+});*/
 
 const drink = document.querySelector('.drink__info');
 /*drink.innerHTML += Layer({ color: '#feeeca', label: 'mléčná pěna' });
 drink.innerHTML += Layer({ color: '#fed7b0', label: 'teplé mléko' });
-drink.innerHTML += Layer({ color: '#613916', label: 'espresso' });*/
+drink.innerHTML += Layer({ color: '#613916', label: 'espresso' });
 
 const layers = [
   {
@@ -52,4 +51,22 @@ const layers = [
 
 for (let i = 0; i < layers.length; i += 1) {
   drink.innerHTML += Layer(layers[i]);
-}
+}*/
+
+const romano = {
+  id: 'romano',
+  name: 'Romano',
+  ordered: false,
+  layers: [
+    {
+      color: '#fbdf5b',
+      label: 'citrón',
+    },
+    {
+      color: '#613916',
+      label: 'espresso',
+    },
+  ],
+};
+
+document.querySelector('.drinks-list').appendChild(Drink(romano));
